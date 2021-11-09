@@ -1,4 +1,4 @@
-#!C:\Users\jeans\Desktop\Insper\4Semestre\TecWeb\ranpho\env\Scripts\python.exe
+#!C:\Users\jeans\Desktop\Insper\4Semestre\TecWeb\ranpho\ranpho_backend\env\Scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\jeans\Desktop\Insper\4Semestre\TecWeb\ranpho\env"
+VIRTUAL_ENV="C:\Users\jeans\Desktop\Insper\4Semestre\TecWeb\ranpho\ranpho_backend\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
