@@ -5,11 +5,13 @@ from django.http import Http404
 from .models import Album, Pic
 from .serializers import PicSerializer, AlbumSerializer
 
-# SUAS OUTRAS FUNÇÕES CONTINUAM AQUI
 
 
-def index (request):
-    return render("Oi")
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Olá! Este é a API do Ranpho. Para acessar os conteudos você deve usar o caminho : /api/....")
 
 @api_view(['GET', 'POST'])
 def api_pic_get(request, pic_id):
