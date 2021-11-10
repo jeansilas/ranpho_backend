@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web:gunicorn ranpho.wsgi
+web:gunicorn ranpho:server
