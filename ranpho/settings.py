@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3_=wv1o-2=vjl$+vs-7+^t3hk^4%vnt5-7$_%&qsbq9bo9my&5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['still-atoll-51386.herokuapp.com', 'localhost', '127.0.0.1']
 
@@ -91,7 +91,7 @@ DATABASES = {
     'default': dj_database_url.config(
         default='postgresql://localhost/ranpho?user=ranphouser&password=ranphosenha',
         conn_max_age=600,
-        ssl_require=False
+        ssl_require=not DEBUG
     )
 }
 
