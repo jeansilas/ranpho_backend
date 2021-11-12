@@ -81,10 +81,13 @@ def api_album_post(request):
     serialized_album = AlbumSerializer(album)
     return Response(serialized_album.data)
 
-@api_view(['DELETE'])
+@api_view(['DELETE','GET'])
 
 def api_pic_delete(request,id):
     if request.method == "DELETE":
         pic = Pic.objects.get(id=id)
         pic.delete()
-
+        
+    pic = Pic()
+    serialized_pic = PicSerializer(pic)
+    return Response(serialized_pic.data)

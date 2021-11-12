@@ -9,6 +9,6 @@ urlpatterns = [
     path('api/album/<str:album_id>/', views.api_album_get),
     path('api/album/',views.api_album_post),
     path('api/albums/', views.api_albums_get),
-    path('api/delete/pic/<int:pic_id>/', views.api_pic_delete)
+    path('api/delete/pic/<int:id>/', views.api_pic_delete)
 
 ]
