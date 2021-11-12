@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.views.generic.base import RedirectView
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.http import Http404
@@ -79,4 +80,11 @@ def api_album_post(request):
     
     serialized_album = AlbumSerializer(album)
     return Response(serialized_album.data)
+
+@api_view(['DELETE'])
+
+def api_pic_delete(request,id):
+    if request.method == "DELETE":
+        pic = Pic.objects.get(id=id)
+        pic.delete()
 
